@@ -1,0 +1,18 @@
+/* Testimonials.css */
+.testimonials {
+    background-color: #fff;
+    padding: 50px;
+  }
+  
+  /* Style for heading */
+  .testimonials h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  /* Style for paragraph */
+  .testimonials p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  

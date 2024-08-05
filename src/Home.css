@@ -1,0 +1,148 @@
+/* Home.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  /* background-color: #1e1e1e; Dark background color */
+  background-color: white;
+  background-image: url("./edited.jpg");
+  background-size: cover;
+  color: #ffffff; /* Text color for dark mode */
+  overflow: hidden; /* Prevent body scroll */
+}
+
+/* Chat Container */
+.chat-container {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  width: 50vw;
+  max-height: 80vh; /* Set a maximum height for the chat container */
+  background-color: #7a7373;
+  border-radius: 10px;
+  box-shadow: none;
+  overflow-y: auto;
+  transition: width 0.3s;
+  z-index: 0;
+  text-align: right;
+}
+
+/* Chat Messages */
+/* .chat-messages {
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto; /* Enable vertical scrolling within the chat messages */
+/* max-height: calc(80vh - 50px); Adjust maximum height to accommodate search bar */
+/* } */
+
+.message-sender {
+  font-weight: bold;
+}
+
+.message-text {
+  margin-top: 5px;
+  color: #ffffff; /* Text color for dark mode */
+}
+
+/* Search Bar */
+.search-bar {
+  /* width: 50wh; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background-color: #1e1e1e; /* Dark background color */
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333333; /* Dark input background color */
+  color: #ffffff; /* Text color for dark mode */
+}
+
+.search-bar button {
+  margin-left: 20px;
+  padding: 10px 20px;
+  /* background-color: #007bff; */
+  background-color: teal;
+  color: #ffffff; /* Text color for dark mode */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+}
+
+.chat-message {
+  /* display: inline-block; */
+  /* margin-bottom: 20px; */
+  /* background-color: rgb(108, 233, 108);
+   */
+  background-color: #e1cc0fc0;
+  border-radius: 30px;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: right;
+  box-shadow: none;
+}
+
+/* FitNav Message */
+.chat-message.FitNav {
+  margin: 10px;
+  display: block;
+  background-color: teal; /* Blue color for FitNav message */
+  border-radius: 30px;
+  padding: 20px;
+  margin: 0;
+  text-align: left;
+  box-shadow: none;
+}
+
+/* User Message */
+.chat-message.You {
+  /* display: inline-block; */
+  /* background-color: rgba(93, 20, 2, 0.805); Dark color for user message */
+  border-radius: 5px;
+  padding-top: 10px;
+  margin-top: 10;
+  /* width: 50%; */
+  text-align: right;
+  box-shadow: none;
+}
+
+/* Chat Container Open */
+.chat-container.open {
+  width: 100vw; /* Full viewport width */
+}
+
+/* Mode Toggle */
+.mode-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000; /* Ensure the button appears above other content */
+}
+
+.mode-toggle button {
+  background-color: transparent;
+  border: none;
+  color: #ffffff; /* Text color for dark mode */
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.mode-toggle button:hover {
+  color: #007bff; /* Blue color for dark mode button on hover */
+}

@@ -1,0 +1,18 @@
+/* Services.css */
+.services {
+    background-color: #f0f0f0;
+    padding: 50px;
+  }
+  
+  /* Style for heading */
+  .services h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  /* Style for paragraph */
+  .services p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
